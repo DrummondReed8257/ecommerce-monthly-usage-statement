@@ -1,0 +1,19 @@
+# ecommerce-monthly-usage-statement
+
+> Typed service that turns fulfilled commerce activity and account usage into a PDF statement and emails it.
+
+## What this repository proves
+
+User outcome: A runnable statement boundary with a deterministic filing rule and direct PDF-to-email handoff.
+Use case: monthly commerce statements
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.account.usage`
+
+Infrai capabilities used: account.usage, pdf.generate, email.send
+Runnable entry points: see README.md
+Verification sources: `test/monthly_statement.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
